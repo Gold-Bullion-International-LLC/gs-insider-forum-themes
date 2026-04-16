@@ -1,0 +1,49 @@
+:root {
+  --primary: #052D6B;
+  --secondary: #FFFFFF;
+  --tertiary: #FCB817;
+}
+
+.d-header {
+  background-color: #052D6B;
+}
+
+.d-header .title {
+  color: #FFFFFF;
+}
+
+.btn-primary {
+  background-color: #052D6B;
+  border-color: #052D6B;
+}
+
+.btn-primary:hover {
+  background-color: #072C64;
+}
+
+a {
+  color: #052D6B;
+}
+
+a:hover {
+  color: #FCB817;
+}
+
+.selected,
+.topic-list-item.selected {
+  background-color: #DCF2FD;
+}
+
+.topic-list-item:hover {
+  background-color: #F4F4F4;
+}
+
+.discourse-tag {
+  background-color: #DCF2FD;
+  color: #052D6B;
+}
+
+.badge-category {
+  background-color: #FCB817;
+  color: #052D6B;
+}
