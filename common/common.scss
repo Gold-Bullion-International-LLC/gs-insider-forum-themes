@@ -1,7 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&display=swap');
+
 :root {
   --primary: #052D6B;
   --secondary: #FFFFFF;
   --tertiary: #FCB817;
+
+  --font-family: "Instrument Sans", sans-serif;
+}
+
+html, body {
+  font-family: var(--font-family) !important;
+}
+
+button,
+input,
+textarea,
+select,
+.btn,
+.d-header,
+.topic-list-item,
+.title,
+p,
+a {
+  font-family: var(--font-family) !important;
 }
 
 .d-header {
