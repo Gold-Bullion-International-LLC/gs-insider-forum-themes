@@ -42,3 +42,19 @@ a:hover {
   background-color: #DCF2FD;
   color: #052D6B;
 }
+
+.d-header .btn:hover,
+.d-header .btn:focus,
+.d-header .btn:active {
+  background-color: #052D6B !important;
+  border-color: #052D6B !important;
+  color: #FFFFFF !important;
+  box-shadow: none !important;
+}
+
+.d-header .btn:hover .d-icon,
+.d-header .btn:focus .d-icon,
+.d-header .btn:active .d-icon {
+  color: #FFFFFF !important;
+  opacity: 1 !important;
+}
