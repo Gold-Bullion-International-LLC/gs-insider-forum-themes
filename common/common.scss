@@ -4,6 +4,8 @@
   --primary: #052D6B;
   --secondary: #FFFFFF;
   --tertiary: #FCB817;
+  --d-header-icon-background--hover: transparent;
+  --d-nav-color--active: #052D6B;
 
   --font-family: "Instrument Sans", sans-serif;
 }
@@ -64,18 +66,53 @@ a:hover {
   color: #052D6B;
 }
 
-.d-header .btn:hover,
-.d-header .btn:focus,
-.d-header .btn:active {
+.d-header .header-sidebar-toggle .btn:hover .d-icon,
+.d-header .d-header-icons .btn:hover .d-icon {
   background-color: #052D6B !important;
-  border-color: #052D6B !important;
-  color: #FFFFFF !important;
-  box-shadow: none !important;
+  opacity: 1 !important;
+  color: #FFFFFF;
 }
 
-.d-header .btn:hover .d-icon,
-.d-header .btn:focus .d-icon,
-.d-header .btn:active .d-icon {
-  color: #FFFFFF !important;
-  opacity: 1 !important;
+.header-sidebar-toggle button:hover {
+  background-color: transparent !important;
+}
+
+
+.d-header .search-input,
+.search-menu .search-input,
+.search-container .search-input {
+  border-radius: 4px;
+  border: 1px solid #CCCFDE;
+  background: #F9F9F9;
+}
+
+#create-topic {
+  border-radius: 5px;
+  border: 1px solid #FFF;
+  background: #052D6B;
+  color: #FFFFFF;
+
+  .d-icon {
+    color: #FFFFFF;
+  }
+}
+
+#navigation-bar {
+  border-bottom: 1px solid #c9d5d9;
+}
+
+#navigation-bar.nav-pills>li.active>a,
+#navigation-bar.nav-pills>li>a.active {
+  color: #052D6B !important;
+  font-weight: 600;
+}
+
+#navigation-bar.nav-pills>li>a {
+  color: #666 !important;
+  background: transparent;
+}
+
+#navigation-bar.nav-pills>li>a:hover {
+  color: #052D6B !important;
+  background: #f3f6f8;
 }
