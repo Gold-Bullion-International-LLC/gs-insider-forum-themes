@@ -1,0 +1,20 @@
+<script>
+    function removeEmojiTooltips() {
+        document.querySelectorAll('img.emoji[title]').forEach(function (el) {
+            el.removeAttribute('title');
+        });
+    }
+
+    // Run once on load
+    removeEmojiTooltips();
+
+    // Watch for dynamically rendered content (Ember SPA)
+    const observer = new MutationObserver(function () {
+        removeEmojiTooltips();
+    });
+
+    observer.observe(document.body, {
+        childList: true,
+        subtree: true
+    });
+</script>
