@@ -121,3 +121,27 @@ a:hover {
   color: #052D6B !important;
   background: #f3f6f8;
 }
+
+.title .logo-big {
+  height: 2rem !important;
+  width: auto !important;
+}
+
+.title a::after {
+  content: "Insider+ Community";
+  font-size: 16px;
+  font-weight: 600;
+  color: #FFF;
+  margin-left: 14px;
+  padding-left: 14px;             
+  border-left: 2px solid #ccc;      
+  vertical-align: middle;
+  display: inline-block;
+  line-height: 1;
+}
+
+@media screen and (max-width: 640px) {
+  .title a::after {
+    display: none !important;
+  }
+}
